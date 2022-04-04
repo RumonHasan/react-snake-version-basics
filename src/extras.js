@@ -9,4 +9,13 @@ export const gameboard = [
     ['','','','','','','','','',''],
     ['','','','','','','','','',''],
     ['','','','','','','','','',''],
-]
+];
+
+export const BOARD_SIZE = 10;
+
+export const getRandomBoardPositions = ()=>{
+    return {
+        row: Math.floor(Math.random() * BOARD_SIZE),
+        col: Math.floor(Math.random() * BOARD_SIZE),
+    }
+}
